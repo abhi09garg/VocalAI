@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Realtime Audio Summarizer</title>
+  <style>
+    body { font-family: sans-serif; margin: 2rem; }
+    button { margin: 0.5rem; padding: 0.5rem 1rem; }
+    pre { background: #f4f4f4; padding: 1rem; white-space: pre-wrap; }
+    #connStatus { margin-top: 1rem; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Realtime Audio Summarizer</h1>
+
+  <button id="startBtn">Start</button>
+  <button id="stopBtn" disabled>Stop</button>
+
+  <h2>Transcript</h2>
+  <pre id="transcript"></pre>
+
+  <h2>Incremental Summaries</h2>
+  <pre id="summaries"></pre>
+
+  <h2>Final Summary</h2>
+  <pre id="final"></pre>
+
+  <div id="connStatus">Disconnected</div>
+
+  <!-- Load Recorder.js first -->
+<script src="./recorder.min.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
